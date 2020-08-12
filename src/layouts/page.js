@@ -10,20 +10,20 @@ export default class Page extends React.Component {
             <Layout {...this.props}>
               <article className="post page post-full">
                 <header className="post-header inner-sm">
-                  <h1 className="post-title underline">{_.get(this.props, 'page.title', null)}</h1>
-                  {_.get(this.props, 'page.subtitle', null) && (
+                  <h1 className="post-title underline">{_.get(this.props, 'page.frontmatter.title', null)}</h1>
+                  {_.get(this.props, 'page.frontmatter.subtitle', null) && (
                   <div className="post-subtitle inner-sm">
-                    {htmlToReact(_.get(this.props, 'page.subtitle', null))}
+                    {htmlToReact(_.get(this.props, 'page.frontmatter.subtitle', null))}
                   </div>
                   )}
                 </header>
-                {_.get(this.props, 'page.img_path', null) && (
+                {_.get(this.props, 'page.frontmatter.img_path', null) && (
                 <div className="post-image">
-                  <img src={withPrefix(_.get(this.props, 'page.img_path', null))} alt={_.get(this.props, 'page.title', null)} />
+                  <img src={withPrefix(_.get(this.props, 'page.frontmatter.img_path', null))} alt={_.get(this.props, 'page.frontmatter.title', null)} />
                 </div>
                 )}
                 <div className="post-content inner-sm">
-                  {markdownify(_.get(this.props, 'page.content', null))}
+                  {markdownify(_.get(this.props, 'page.markdown', null))}
                 </div>
               </article>
             </Layout>
