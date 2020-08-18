@@ -11,24 +11,24 @@ export default class Blog extends React.Component {
         return (
             <Layout {...this.props}>
               <header className="screen-reader-text">
-                <h1>{_.get(this.props, 'page.title', null)}</h1>
+                <h1>{_.get(this.props, 'page.frontmatter.title', null)}</h1>
               </header>
               <div className="post-feed">
                 <div className="post-feed-inside">
                   {_.map(display_posts, (post, post_idx) => (
                   <article key={post_idx} className="post post-card">
                     <div className="post-inside">
-                      {_.get(post, 'thumb_img_path', null) && (
+                      {_.get(post, 'frontmatter.thumb_img_path', null) && (
                       <Link className="post-thumbnail" href={withPrefix(_.get(post, '__metadata.urlPath', null))}>
-                        <img src={withPrefix(_.get(post, 'thumb_img_path', null))} alt={_.get(post, 'title', null)} />
+                        <img src={withPrefix(_.get(post, 'frontmatter.thumb_img_path', null))} alt={_.get(post, 'frontmatter.title', null)} />
                       </Link>
                       )}
                       <header className="post-header">
-                        <h2 className="post-title"><Link href={withPrefix(_.get(post, '__metadata.urlPath', null))} rel="bookmark">{_.get(post, 'title', null)}</Link></h2>
+                        <h2 className="post-title"><Link href={withPrefix(_.get(post, '__metadata.urlPath', null))} rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link></h2>
                       </header>
-                      {_.get(post, 'excerpt', null) && (
+                      {_.get(post, 'frontmatter.excerpt', null) && (
                       <div className="post-content">
-                        <p>{_.get(post, 'excerpt', null)}</p>
+                        <p>{_.get(post, 'frontmatter.excerpt', null)}</p>
                       </div>
                       )}
                       <footer className="post-meta">

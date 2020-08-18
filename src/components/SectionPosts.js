@@ -20,15 +20,15 @@ export default class SectionPosts extends React.Component {
                   {_.map(recent_posts, (post, post_idx) => (
                   <article key={post_idx} className="post post-card">
                     <div className="post-inside">
-                      {_.get(post, 'thumb_img_path', null) && (
-                      <Link className="post-thumbnail" href={withPrefix(_.get(post, '__metadata.urlPath', null))}><img src={withPrefix(_.get(post, 'thumb_img_path', null))} alt={_.get(post, 'title', null)} /></Link>
+                      {_.get(post, 'frontmatter.thumb_img_path', null) && (
+                      <Link className="post-thumbnail" href={withPrefix(_.get(post, '__metadata.urlPath', null))}><img src={withPrefix(_.get(post, 'frontmatter.thumb_img_path', null))} alt={_.get(post, 'frontmatter.title', null)} /></Link>
                       )}
                       <header className="post-header">
-                        <h3 className="post-title"><Link href={withPrefix(_.get(post, '__metadata.urlPath', null))} rel="bookmark">{_.get(post, 'title', null)}</Link></h3>
+                        <h3 className="post-title"><Link href={withPrefix(_.get(post, '__metadata.urlPath', null))} rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link></h3>
                       </header>
-                      {_.get(post, 'excerpt', null) && (
+                      {_.get(post, 'frontmatter.excerpt', null) && (
                       <div className="post-content">
-                        <p>{_.get(post, 'excerpt', null)}</p>
+                        <p>{_.get(post, 'frontmatter.excerpt', null)}</p>
                       </div>
                       )}
                       <footer className="post-meta">
