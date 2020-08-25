@@ -44,7 +44,7 @@
                 "url": "https://twitter.com/",
                 "style": "icon",
                 "icon_class": "fa-twitter",
-                "new_window": true
+                "new_window": false
             },
             {
                 "label": "GitHub",
