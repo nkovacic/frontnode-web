@@ -40,13 +40,6 @@
         "has_social": true,
         "social_links": [
             {
-                "label": "Twitter",
-                "url": "https://twitter.com/",
-                "style": "icon",
-                "icon_class": "fa-twitter",
-                "new_window": true
-            },
-            {
                 "label": "GitHub",
                 "url": "https://github.com/nkovacic",
                 "style": "icon",
