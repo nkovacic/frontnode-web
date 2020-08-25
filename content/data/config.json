@@ -6,7 +6,7 @@
     "palette": "blue",
     "header": {
         "title": "Niko Kovačič",
-        "tagline": "Adventures in ",
+        "tagline": "Adventures in Node.js ",
         "profile_img": "images/avatar.png",
         "background": "dark",
         "has_nav": true,
