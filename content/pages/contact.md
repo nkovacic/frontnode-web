@@ -23,7 +23,7 @@ sections:
         label: Subject
         default_value: Please select
         options:
-          - Remote contractual work
+          - 'Remote '
           - Error on the site
           - Other
       - input_type: textarea
