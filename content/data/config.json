@@ -1,7 +1,7 @@
 {
     "title": "nCode",
     "path_prefix": "/",
-    "description": "Adventures in Node.js , React, Lowcode and Nocode",
+    "description": "Adventures in Node.js , React, Low-code and Nocode",
     "layout_style": "overflow",
     "palette": "blue",
     "header": {
