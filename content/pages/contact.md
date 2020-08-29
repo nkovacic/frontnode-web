@@ -23,7 +23,7 @@ sections:
         label: Subject
         default_value: Please select
         options:
-          - Lets talk about contractual work
+          - Let's talk about contractual work
           - Error on the site
           - Other
       - input_type: textarea
