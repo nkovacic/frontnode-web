@@ -23,9 +23,9 @@ sections:
         label: Subject
         default_value: Please select
         options:
+          - Project
           - Error on the site
           - Other
-          - Project
       - input_type: textarea
         name: message
         label: Message
