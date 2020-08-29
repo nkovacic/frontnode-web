@@ -25,6 +25,7 @@ sections:
         options:
           - Error on the site
           - Other
+          - lorem-ipsum
       - input_type: textarea
         name: message
         label: Message
