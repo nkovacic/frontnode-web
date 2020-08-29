@@ -26,7 +26,6 @@ sections:
           - Error on the site
           - Other
           - Project
-          - ''
       - input_type: textarea
         name: message
         label: Message
