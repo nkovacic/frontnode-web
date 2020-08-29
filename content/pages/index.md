@@ -6,8 +6,14 @@ sections:
     type: section_hero
     title: 'Hi, I''m Niko Kovačič'
     content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+      I'm a co-founder and CTO at [Foreach
+      Solutions](https://www.foreach-solutions.com/en/?ref=ncode) from [Maribor,
+      Slovenia](https://goo.gl/maps/GdHsezDhZLiPUm7z9), where we are building
+      mobile and web products.
+
+
+      I currently work with ASP.NET Core React,js, React Native. I my free time
+      I'm learning about lowcode, nocode and Node.js.
   - section_id: about
     type: section_content
     title: About
