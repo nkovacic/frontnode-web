@@ -12,10 +12,10 @@ sections:
       mobile and web products.
 
 
-      I currently work with ASP.NET Core React,js, React Native.
+      I currently work with ASP.NET Core, React,js, React Native.
 
 
-      I my free time I [blog](/blog) about lowcode, nocode and Node.js.
+      I my free time I blog about Low-Code, No-Code, Node.js and React.
   - section_id: about
     type: section_content
     title: ''
