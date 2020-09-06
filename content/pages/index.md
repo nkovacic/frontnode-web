@@ -12,7 +12,8 @@ sections:
       mobile and web products.
 
 
-      I currently work with ASP.NET Core, React,js, React Native.
+      I currently work with ASP.NET Core, Azure, Azure DevOps, React.js, React
+      Native.
 
 
       I my free time I blog about Low-Code, No-Code, Node.js and React.
