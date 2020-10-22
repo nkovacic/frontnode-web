@@ -1,10 +1,12 @@
 // import App from 'next/app'
 import { useEffect } from 'react';
-import Router from 'next/router';
+import { useRouter } from 'next/router'
 import '../sass/main.scss';
 
+import * as gtag from '../lib/gtag'
 
 function MyApp({ Component, pageProps }) {
+    const router = useRouter();
 
     useEffect(() => {
         if (window.onNextjsAppDidMount) {
@@ -21,19 +23,22 @@ function MyApp({ Component, pageProps }) {
             }
         }
 
-        const handleRouteChangeComplete = () => {
+        const handleRouteChangeComplete = (url) => {
+            gtag.pageview(url)
+
             if (window.onNextjsRouteChangeComplete) {
                 window.onNextjsRouteChangeComplete();
             }
         }
 
-        Router.events.on('routeChangeStart', handleRouteChangeStart);
-        Router.events.on('routeChangeComplete', handleRouteChangeComplete);
+        router.events.on('routeChangeStart', handleRouteChangeStart);
+        router.events.on('routeChangeComplete', handleRouteChangeComplete);
+        
         return () => {
-            Router.events.off('routeChangeStart', handleRouteChangeStart);
-            Router.events.off('routeChangeComplete', handleRouteChangeComplete);
+            router.events.off('routeChangeStart', handleRouteChangeStart);
+            router.events.off('routeChangeComplete', handleRouteChangeComplete);
         };
-    }, []);
+    }, [router.events]);
 
     return <Component {...pageProps} />;
 }

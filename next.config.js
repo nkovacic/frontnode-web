@@ -18,7 +18,7 @@ module.exports = {
         // @import "../../public/assets/css/example.css";
         importer: (url, prev, done) => {
             if (/\.css$/i.test(url)) {
-                return { file: path.join('../../public/assets/css', url) }
+                return { file: path.join(process.cwd() +'/public/assets/css', url) }
             }
             return null;
         }
