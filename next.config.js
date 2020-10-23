@@ -18,7 +18,7 @@ module.exports = {
         // @import "../../public/assets/css/example.css";
         importer: (url, prev, done) => {
             if (/\.css$/i.test(url)) {
-                const prefix = process.env.NODE_ENV === 'development' ? process.cwd() : '../..';
+                const prefix = process.env.NODE_ENV === 'local' ? process.cwd() : '../..';
 
                 return { file: path.join(prefix +'/public/assets/css', url) }
             }
