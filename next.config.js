@@ -7,7 +7,7 @@ const sourcebitConfig = require('./sourcebit.js');
 sourcebit.fetch(sourcebitConfig);
 
 module.exports = {
-    exportTrailingSlash: true,
+    trailingSlash: true,
     devIndicators: {
         autoPrerender: false
     },
@@ -18,7 +18,9 @@ module.exports = {
         // @import "../../public/assets/css/example.css";
         importer: (url, prev, done) => {
             if (/\.css$/i.test(url)) {
-                return { file: path.join(process.cwd() +'/public/assets/css', url) }
+                const prefix = process.env.NODE_ENV === 'local' ? process.cwd() : '../..';
+
+                return { file: path.join(prefix +'/public/assets/css', url) }
             }
             return null;
         }
