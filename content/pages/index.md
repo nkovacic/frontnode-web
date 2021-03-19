@@ -5,18 +5,18 @@ sections:
   - section_id: hero
     type: section_hero
     title: 'Hi, I''m Niko Kovačič'
-    content: >-
+    content: >
       I'm a co-founder and CTO at [Foreach
       Solutions](https://www.foreach-solutions.com/en/?ref=ncode) from [Maribor,
       Slovenia](https://goo.gl/maps/GdHsezDhZLiPUm7z9), where we are building
       mobile and web products.
 
 
-      I currently work with ASP.NET Core, Azure, Azure DevOps, React.js, React
+      I currently work with React.js, ASP.NET Core, Azure, Azure DevOps, React
       Native.
 
 
-      I my free time I blog about Low-Code, No-Code, Node.js and React.
+      In my free time I blog about React, Node.js, Low-Code, and No-Code,
   - section_id: about
     type: section_content
     title: ''
