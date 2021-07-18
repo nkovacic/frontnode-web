@@ -23,7 +23,7 @@
             },
             {
                 "label": "Blog",
-                "url": "lorem-ipsum",
+                "url": "/blog",
                 "style": "link",
                 "icon_class": "lorem-ipsum",
                 "new_window": false,
